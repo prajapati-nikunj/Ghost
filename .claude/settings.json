@@ -1,0 +1,27 @@
+{
+  "project": {
+    "name": "Ghost",
+    "version": "2.0.0",
+    "type": "AI-Native Software Factory"
+  },
+  "claude": {
+    "agent_path": ".claude/agents",
+    "command_path": ".claude/commands",
+    "skill_path": ".claude/skills",
+    "rule_path": ".claude/rules",
+    "workflow_path": ".claude/workflows"
+  },
+  "orchestration": {
+    "conductor_agent": ".claude/agents/conductor.md",
+    "state_file": "docs/artifacts/project-state.json",
+    "artifact_dir": "docs/artifacts",
+    "max_retries_per_agent": 3,
+    "parallel_execution": true
+  },
+  "quality_gates": {
+    "min_test_coverage": 80,
+    "max_review_blockers": 0,
+    "max_security_critical": 0,
+    "max_security_high": 0
+  }
+}

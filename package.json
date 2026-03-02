@@ -1,0 +1,20 @@
+{
+    "name": "ghost-software-factory",
+    "version": "1.0.0",
+    "description": "AI-Native Software Factory",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "analyze": "claude analyze-req",
+        "arch": "claude generate-arch",
+        "build": "claude build-mvp",
+        "qa": "claude run-qa"
+    },
+    "keywords": [
+        "AI",
+        "Automation",
+        "CleanArchitecture"
+    ],
+    "author": "Ghost Team",
+    "license": "ISC"
+}

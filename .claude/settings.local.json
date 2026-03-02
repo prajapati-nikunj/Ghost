@@ -1,0 +1,11 @@
+{
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "ghost-mcp"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(wc -l .claude/agents/*.md .claude/workflows/*.md .claude/commands/*.md .claude/CLAUDE.md)"
+    ]
+  }
+}

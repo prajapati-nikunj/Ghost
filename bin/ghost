@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Ghost Software Factory CLI
+# Usage: ./bin/ghost <command>
+
+COMMAND=$1
+SHIFT_ARGS=${@:2}
+
+case $COMMAND in
+  "analyze")
+    echo "🔍 Starting Requirement Analysis for Project: $SHIFT_ARGS"
+    # Logic to invoke Requirement Analyzer agent
+    ;;
+  "arch")
+    echo "🏗️ Generating System Architecture for Project: $SHIFT_ARGS"
+    # Logic to invoke Architect agent
+    ;;
+  "build")
+    echo "🚀 Building MVP for Project: $SHIFT_ARGS"
+    # Logic to invoke Code Generator agent
+    ;;
+  "qa")
+    echo "🛡️ Running QA & Testing for Project: $SHIFT_ARGS"
+    # Logic to invoke QA Engine agent
+    ;;
+  "status")
+    echo "📊 Current Projects Status:"
+    ls -R workspace/
+    ;;
+  *)
+    echo "Usage: ./bin/ghost <analyze|arch|build|qa|status> <project_name>"
+    ;;
+esac

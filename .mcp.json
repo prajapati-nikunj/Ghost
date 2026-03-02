@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+        "ghost-mcp": {
+            "command": "node",
+            "args": [
+                "dist/index.js"
+            ],
+            "env": {
+                "GHOST_API_KEY": "YOUR_API_KEY"
+            }
+        }
+    }
+}

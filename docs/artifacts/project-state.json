@@ -1,0 +1,64 @@
+{
+  "_schema": "ghost-project-state/v1",
+  "_description": "Single source of truth for project lifecycle. Read by all agents. Written only by Conductor.",
+
+  "project": {
+    "id": "",
+    "name": "",
+    "description": "",
+    "created_at": "",
+    "updated_at": "",
+    "version": "0.1.0"
+  },
+
+  "status": "DRAFT",
+
+  "status_history": [],
+
+  "artifacts": {
+    "rad": { "path": "docs/artifacts/rad.md", "status": "PENDING", "updated_at": null },
+    "sad": { "path": "docs/artifacts/sad.md", "status": "PENDING", "updated_at": null },
+    "effort_estimate": { "path": "docs/artifacts/effort-estimate.md", "status": "PENDING", "updated_at": null },
+    "product_backlog": { "path": "docs/artifacts/product-backlog.md", "status": "PENDING", "updated_at": null },
+    "review_report": { "path": "docs/artifacts/review-report.md", "status": "PENDING", "updated_at": null },
+    "qa_report": { "path": "docs/artifacts/qa-report.md", "status": "PENDING", "updated_at": null },
+    "security_report": { "path": "docs/artifacts/security-report.md", "status": "PENDING", "updated_at": null },
+    "tech_docs": { "path": "docs/artifacts/tech-docs.md", "status": "PENDING", "updated_at": null },
+    "deploy_log": { "path": "docs/artifacts/deploy-log.md", "status": "PENDING", "updated_at": null }
+  },
+
+  "risk_scores": {
+    "complexity": null,
+    "timeline": null,
+    "scalability": null,
+    "security": null,
+    "dependency": null,
+    "ambiguity": null,
+    "composite": null
+  },
+
+  "effort": {
+    "total_story_points": null,
+    "recommended_sprints": null,
+    "buffer_percent": null
+  },
+
+  "quality_gates": {
+    "review": { "status": "PENDING", "blockers": null, "warnings": null },
+    "qa": { "status": "PENDING", "coverage_percent": null, "failures": null },
+    "security": { "status": "PENDING", "critical": null, "high": null, "medium": null }
+  },
+
+  "retries": [],
+
+  "human_gates": {
+    "pre_deploy": { "status": "PENDING", "approved_at": null, "approved_by": null }
+  },
+
+  "deployment": {
+    "environment": null,
+    "platform": null,
+    "live_url": null,
+    "deployed_at": null
+  }
+}
